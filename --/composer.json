@@ -1,0 +1,9 @@
+{
+  "name": "nmt/personApi",
+  "description": "project description",
+  "require": {
+    "php": ">=7.0.0",
+    "phalcon/ide-stubs": "^3.4",
+    "ext-json": "*"
+  }
+}
