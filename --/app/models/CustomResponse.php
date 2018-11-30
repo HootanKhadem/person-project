@@ -1,5 +1,6 @@
 <?php
 
+
 class CustomResponse implements JsonSerializable
 {
 
@@ -41,7 +42,7 @@ class CustomResponse implements JsonSerializable
         $this->schema = $schema;
         $this->data = $data;
         $this->meta = $meta;
-        $this->date = date_format(new DateTime('now', new DateTimeZone('Asia/Tehran')), 'Y-m-d\TH:i:s.vO');
+        $this->date = date_format(new DateTime('now', new DateTimeZone(Configuration::APP_TIMEZONE)), 'Y-m-d\TH:i:s.vO');
     }
 
     /**
